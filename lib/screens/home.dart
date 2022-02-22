@@ -99,27 +99,23 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 });
               },
-              child: Container(
-                child: Text(
-                  "Calculate",
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                    color: accentHexColor,
-                  ),
+              child: Text(
+                "Calculate",
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: accentHexColor,
                 ),
               ),
             ),
             const SizedBox(
               height: 50,
             ),
-            Container(
-              child: Text(
-                _BmiResult.toStringAsFixed(2),
-                style: TextStyle(
-                  fontSize: 90,
-                  color: accentHexColor,
-                ),
+            Text(
+              _BmiResult.toStringAsFixed(2),
+              style: TextStyle(
+                fontSize: 90,
+                color: accentHexColor,
               ),
             ),
             const SizedBox(
@@ -127,14 +123,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Visibility(
               visible: _textResult.isNotEmpty,
-              child: Container(
-                child: Text(
-                  _textResult,
-                  style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.w400,
-                    color: accentHexColor,
-                  ),
+              child: Text(
+                _textResult,
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.w400,
+                  color: accentHexColor,
                 ),
               ),
             ),
@@ -153,11 +147,11 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(
               height: 20,
             ),
-            RightBar(BarWidth: 70),
+            const RightBar(BarWidth: 70),
             const SizedBox(
               height: 50,
             ),
-            RightBar(BarWidth: 70)
+            const RightBar(BarWidth: 70)
           ],
         ),
       ),
